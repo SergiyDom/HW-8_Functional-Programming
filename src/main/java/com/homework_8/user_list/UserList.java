@@ -15,4 +15,7 @@ public class UserList {
             new User("Марина", 32, "Киев"),
             new User("Иван Иванович", 69, "Львов")
     );
+    public List<User> getUserList(){
+        return list;
+    }
 }

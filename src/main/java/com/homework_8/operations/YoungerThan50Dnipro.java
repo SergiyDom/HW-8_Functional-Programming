@@ -7,9 +7,9 @@ import java.util.stream.Collectors;
 
 public class YoungerThan50Dnipro {
     public void getYoungerThan50Dnipro(List<User> userList) {
-        userList.stream()
-                .filter(u -> u.getAge() < 50 && "Днепр"
-                        .equals(u.getCity())).collect(Collectors.toList());
-        System.out.println("User Younger Than 50 with Dnipro: ");
+        System.out.println("User Younger Than 50 with Dnipro: "
+                + userList.stream()
+                .filter(u -> u.getAge() < 50 && "Днепр".equals(u.getCity()))
+                .collect(Collectors.toList()));
     }
 }

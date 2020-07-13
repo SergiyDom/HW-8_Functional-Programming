@@ -7,9 +7,9 @@ import java.util.stream.Collectors;
 
 public class OlderThan40 {
     public void getOlderThan40(List<User> userList) {
-        userList.stream()
+        System.out.println("Older Than 40: "
+                + userList.stream()
                 .filter(user -> user.getAge() > 40)
-                .collect(Collectors.toList());
-        System.out.println("Older Than 40: ");
+                .collect(Collectors.toList()));
     }
 }

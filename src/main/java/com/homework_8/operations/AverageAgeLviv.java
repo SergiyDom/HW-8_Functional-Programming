@@ -6,11 +6,11 @@ import java.util.List;
 
 public class AverageAgeLviv {
     public void getAverageAgeLviv(List<User> userList) {
-        double averageAge = userList.stream()
+        System.out.println("Average Age Lviv: "
+                + userList.stream()
                 .filter(user -> "Львов".equals(user.getCity()))
                 .mapToInt(User::getAge)
                 .average()
-                .getAsDouble();
-        System.out.println("Average Age Lviv: " + averageAge);
+                .getAsDouble());
     }
 }

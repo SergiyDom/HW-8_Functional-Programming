@@ -8,10 +8,10 @@ import java.util.stream.Collectors;
 
 public class SortByAge {
     public void getSortByAge(List<User> userList) {
-        userList.stream()
+        System.out.println("Sort By Age and limit 3: "
+                + userList.stream()
                 .sorted(Comparator.comparing(User::getAge))
                 .limit(3)
-                .collect(Collectors.toList());
-        System.out.println("Sort By Age and limit 3: ");
+                .collect(Collectors.toList()));
     }
 }

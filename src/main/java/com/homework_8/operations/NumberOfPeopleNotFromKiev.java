@@ -6,9 +6,9 @@ import java.util.List;
 
 public class NumberOfPeopleNotFromKiev {
     public void getNumberOfPeopleNotFromKiev(List<User> userList) {
-        long count = userList.stream()
+        System.out.println("Number Of People Not From Kiev: "
+                + userList.stream()
                 .filter(user -> !"Киев".equals(user.getCity()))
-                .count();
-        System.out.println("Number Of People Not From Kiev: " + count);
+                .count());
     }
 }
