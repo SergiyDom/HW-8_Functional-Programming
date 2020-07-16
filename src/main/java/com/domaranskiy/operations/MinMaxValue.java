@@ -1,4 +1,4 @@
-package com.homework_8.operations;
+package com.domaranskiy.operations;
 
 import java.util.List;
 
